@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Abandonment Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="header">
+      <div class="leftContainer">
+        <h2>Cart Abandonment Dashboard</h2>
+        <p class="headersubtitle">Track and recover abandoned shopping carts</p>
+      </div>
+      <div class="rightContainer">
+        <button class="secondaryButton">Refresh</button>
+        <button class="primaryButton">Export</button>
+      </div>
+    </header>
+
+    <!--MAIN CONTENT-->
+    <div class="mainContent">
+      <div class="statsCardsContainer">
+        <!--1ST STAT CARD-->
+        <div class="statscard">
+          <div class="statscardtitle">
+            <h2>Total Abandoned Carts</h2>
+            <span><img src="icons/carticon.png" alt="Cart icon" /></span>
+          </div>
+          <div class="statscardtitleandtext">
+            <h2 class="statsnumber">8</h2>
+            <p class="statsnumberdescription">Across all time periods</p>
+          </div>
+          <div class="statscardtrend">
+            <p class="statspercentage red">10%</p>
+            <p class="statspercentage">vs last week</p>
+          </div>
+        </div>
+
+        <!--2ND STAT CARD-->
+        <div class="statscard">
+          <div class="statscardtitle">
+            <h2>Abandoned Cart Value</h2>
+            <span><img src="icons/valueicon.png" alt="Value icon" /></span>
+          </div>
+          <div class="statscardtitleandtext">
+            <h2 class="statsnumber">8</h2>
+            <p class="statsnumberdescription">Across all time periods</p>
+          </div>
+          <div class="statscardtrend">
+            <p class="statspercentage red">10%</p>
+            <p class="statspercentage">vs last week</p>
+          </div>
+        </div>
+
+        <!--3RD STAT CARD-->
+        <div class="statscard">
+          <div class="statscardtitle">
+            <h2>Recover Rate</h2>
+            <span><img src="icons/rateicon.png" alt="" /></span>
+          </div>
+          <div class="statscardtitleandtext">
+            <h2 class="statsnumber">8</h2>
+            <p class="statsnumberdescription">Across all time periods</p>
+          </div>
+          <div class="statscardtrend">
+            <p class="statspercentage red">10%</p>
+            <p class="statspercentage">vs last week</p>
+          </div>
+        </div>
+
+        <!--4TH STAT CARD-->
+        <div class="statscard">
+          <div class="statscardtitle">
+            <h2>Avg. Cart Value</h2>
+            <span><img src="icons/boxicon.png" alt="" /></span>
+          </div>
+          <div class="statscardtitleandtext">
+            <h2 class="statsnumber">8</h2>
+            <p class="statsnumberdescription">Across all time periods</p>
+          </div>
+          <div class="statscardtrend">
+            <p class="statspercentage red">10%</p>
+            <p class="statspercentage">vs last week</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Abandoned Carts Container-->
+      <div class="abandonedCartsContainer">
+        <div class="abandonedCartsTitle">
+          <h3>Abandoned Carts</h3>
+          <div class="rightContainer">
+            <div class="searchwrapper">
+              <img src="" alt="" /><input type="text" placeholder="search" />
+            </div>
+            <select name="cart-period" id="cart-period" class="cart-period">
+              <option value="All Time">All Time</option>
+              <option value="All Time">Year 2024</option>
+              <option value="All Time">Year 2025</option>
+              <option value="All Time">Last 6months</option>
+            </select>
+            <select name="statustype" id="statustype">
+              <option value="all-status">All status</option>
+              <option value="recovered">Recovered</option>
+              <option value="not-sent">Not sent</option>
+              <option value="clicked">Clicked</option>
+              <option value="opened">Opened</option>
+            </select>
+          </div>
+        </div>
+
+        <!--ABANDONED CART TABLE-->
+        <table>
+          <thead>
+            <tr>
+              <th>Customer</th>
+              <th>Products</th>
+              <th>Cart Value</th>
+              <th>Abandoned</th>
+              <th>Email Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="customerNameEmail">
+                Sarah Johnson
+                <span class="customerEmail">sarah.j@gmail.com</span>
+              </td>
+
+              <td class="product">
+                <img src="images/ImageWithFallback-1.png" alt="" /><span
+                  >Product Name</span
+                >
+              </td>
+              <td class="cartvalue">$299.00</td>
+
+              <td class="abandoned">
+                <img src="" alt="" /><span>1d ago Name</span>
+              </td>
+              <td class="emailstatus">
+                Opened <span class="daysent"> Sent: 1d</span>
+              </td>
+               <td class="actionIcon">
+                <img src="icons/buttonView.png" alt="" />
+              </td>
+            </tr>
+            <tr>
+              <td class="customerNameEmail">
+                Sarah Johnson
+                <span class="customerEmail">sarah.j@gmail.com</span>
+              </td>
+
+              <td class="product">
+                <img src="images/ImageWithFallback-2.png" alt="" /><span
+                  >Product Name</span
+                >
+              </td>
+              <td class="cartvalue">$299.00</td>
+
+              <td class="abandoned">
+                <img src="" alt="" /><span>1d ago Name</span>
+              </td>
+              <td class="emailstatus">
+                Opened <span class="daysent"> Sent: 1d</span>
+              </td>
+               <td class="actionIcon">
+                <img src="icons/buttonView.png" alt="" />
+              </td>
+            </tr>
+            <tr>
+              <td class="customerNameEmail">
+                Sarah Johnson
+                <span class="customerEmail">sarah.j@gmail.com</span>
+              </td>
+
+              <td class="product">
+                <img src="images/ImageWithFallback-3.png" alt="" /><span
+                  >Product Name</span
+                >
+              </td>
+              <td class="cartvalue">$299.00</td>
+
+              <td class="abandoned">
+                <img src="" alt="" /><span>1d ago Name</span>
+              </td>
+              <td class="emailstatus">
+                Opened <span class="daysent"> Sent: 1d</span>
+              </td>
+               <td class="actionIcon">
+                <img src="icons/buttonView.png" alt="" />
+              </td>
+            </tr>
+            <tr>
+              <td class="customerNameEmail">
+                Sarah Johnson
+                <span class="customerEmail">sarah.j@gmail.com</span>
+              </td>
+
+              <td class="product">
+                <img src="images/ImageWithFallback-4.png" alt="" /><span
+                  >Product Name</span
+                >
+              </td>
+              <td class="cartvalue">$299.00</td>
+
+              <td class="abandoned">
+                <img src="" alt="" /><span>1d ago Name</span>
+              </td>
+              <td class="emailstatus">
+                Opened <span class="daysent"> Sent: 1d</span>
+              </td>
+               <td class="actionIcon">
+                <img src="icons/buttonView.png" alt="" />
+              </td>
+            </tr>
+            <tr>
+              <td class="customerNameEmail">
+                Sarah Johnson
+                <span class="customerEmail">sarah.j@gmail.com</span>
+              </td>
+
+              <td class="product">
+                <img src="images/ImageWithFallback-5.png" alt="" /><span
+                  >Product Name</span
+                >
+              </td>
+              <td class="cartvalue">$299.00</td>
+
+              <td class="abandoned">
+                <img src="" alt="" /><span>1d ago Name</span>
+              </td>
+              <td class="emailstatus">
+                Opened <span class="daysent"> Sent: 1d</span>
+              </td>
+               <td class="actionIcon">
+                <img src="icons/buttonView.png" alt="" />
+              </td>
+            </tr>
+            <tr>
+              <td class="customerNameEmail">
+                Sarah Johnson
+                <span class="customerEmail">sarah.j@gmail.com</span>
+              </td>
+
+              <td class="product">
+                <img src="images/ImageWithFallback-6.png" alt="" /><span
+                  >Product Name</span
+                >
+              </td>
+              <td class="cartvalue">$299.00</td>
+
+              <td class="abandoned">
+                <img src="" alt="" /><span>1d ago Name</span>
+              </td>
+              <td class="emailstatus">
+                Opened <span class="daysent"> Sent: 1d</span>
+              </td>
+               <td class="actionIcon">
+                <img src="icons/buttonView.png" alt="" />
+              </td>
+            </tr>
+            <tr>
+              <td class="customerNameEmail">
+                Sarah Johnson
+                <span class="customerEmail">sarah.j@gmail.com</span>
+              </td>
+
+              <td class="product">
+                <img src="images/ImageWithFallback.png" alt="" /><span
+                  >Product Name</span
+                >
+              </td>
+              <td class="cartvalue">$299.00</td>
+
+              <td class="abandoned">
+                <img src="" alt="" /><span>1d ago Name</span>
+              </td>
+              <td class="emailstatus">
+                Opened <span class="daysent"> Sent: 1d</span>
+              </td>
+
+               <td class="actionIcon">
+                <img src="icons/buttonView.png" alt="" />
+              </td>
+            
+            </tr>
+         
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
