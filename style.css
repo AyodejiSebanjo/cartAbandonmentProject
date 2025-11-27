@@ -1,0 +1,341 @@
+/* -----------------------------------
+   ROOT VARIABLES (Design System)
+----------------------------------- */
+:root {
+  --bg: #f7f8fa;
+  --white: #ffffff;
+
+  --text: #1a1a1a;
+  --text-light: #6d6d6d;
+
+  --primary: #4f46e5;
+  --primary-light: #eef0ff;
+
+  --border: #ececec;
+
+  --red: #ff5b5b;
+  --green: #2ecc71;
+
+  --radius: 14px;
+  --shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+
+/* -----------------------------------
+   GLOBAL
+----------------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+
+/* -----------------------------------
+   HEADER
+----------------------------------- */
+.header {
+  background: var(--white);
+  padding: 22px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.subtitle {
+  margin-top: 4px;
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.header-right {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  padding: 10px 18px;
+  border-radius: var(--radius);
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn.primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn.secondary {
+  background: var(--white);
+  border: 1px solid var(--border);
+}
+
+
+/* -----------------------------------
+   MAIN CONTENT WRAPPER
+----------------------------------- */
+.main-content {
+  padding: 28px;
+}
+
+
+/* -----------------------------------
+   STAT CARDS
+----------------------------------- */
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.stat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-header h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.stat-body {
+  margin: 14px 0;
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.stat-description {
+  margin-top: 4px;
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.stat-trend {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.trend-number {
+  font-weight: 600;
+}
+
+.trend-number.red {
+  color: var(--red);
+}
+
+.trend-label {
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+
+/* -----------------------------------
+   ABANDONED CARTS SECTION
+----------------------------------- */
+.abandoned-carts {
+  background: var(--white);
+  padding: 24px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Search Field */
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg);
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.search-wrapper input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+}
+
+/* Select Inputs */
+.select-input {
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--white);
+  font-size: 14px;
+  outline: none;
+}
+
+
+/* -----------------------------------
+   TABLE
+----------------------------------- */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.data-table thead {
+  background: var(--bg);
+}
+
+.data-table th {
+  padding: 14px 12px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.data-table td {
+  padding: 16px 12px;
+  font-size: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Customer Cell */
+.customer {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.customer .name {
+  font-weight: 600;
+}
+
+.customer .email {
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+/* Product */
+.product {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product img {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+/* Cart value */
+.cart-value {
+  font-weight: 600;
+}
+
+/* Abandoned time */
+.abandoned {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-light);
+}
+
+/* Email Status */
+.email-status {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.email-status .status {
+  font-weight: 600;
+}
+
+.email-status .sent {
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+/* View Button */
+.action button {
+  background: var(--white);
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  border-radius: var(--radius);
+}
+
+.action button img {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* -----------------------------------
+   RESPONSIVE
+----------------------------------- */
+@media (max-width: 1024px) {
+  .stats-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .filter-group {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .search-wrapper, .select-input {
+    flex: 1;
+  }
+}
